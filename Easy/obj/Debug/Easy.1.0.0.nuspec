@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Easy</id>
+    <version>1.0.0</version>
+    <authors>Easy</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.Data.Sqlite.Core" version="6.0.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\shirt\simple_pw_manager\Easy\Easy\bin\Debug\net6.0\Easy.runtimeconfig.json" target="lib\net6.0\Easy.runtimeconfig.json" />
+    <file src="C:\Users\shirt\simple_pw_manager\Easy\Easy\bin\Debug\net6.0\Easy.dll" target="lib\net6.0\Easy.dll" />
+  </files>
+</package>
