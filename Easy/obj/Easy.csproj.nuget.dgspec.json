@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shirt\\simple_pw_manager\\Easy\\Easy\\Easy.csproj": {}
+    "C:\\Users\\shirt\\EasySQLite\\Easy\\Easy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shirt\\simple_pw_manager\\Easy\\Easy\\Easy.csproj": {
+    "C:\\Users\\shirt\\EasySQLite\\Easy\\Easy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shirt\\simple_pw_manager\\Easy\\Easy\\Easy.csproj",
+        "projectUniqueName": "C:\\Users\\shirt\\EasySQLite\\Easy\\Easy.csproj",
         "projectName": "Easy",
-        "projectPath": "C:\\Users\\shirt\\simple_pw_manager\\Easy\\Easy\\Easy.csproj",
+        "projectPath": "C:\\Users\\shirt\\EasySQLite\\Easy\\Easy.csproj",
         "packagesPath": "C:\\Users\\shirt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shirt\\simple_pw_manager\\Easy\\Easy\\obj\\",
+        "outputPath": "C:\\Users\\shirt\\EasySQLite\\Easy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shirt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

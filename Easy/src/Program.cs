@@ -9,7 +9,7 @@ public class Program
 
     public static void Main(string[] args)
     {
-        SQLiteConnection conn = new SQLiteConnection($"Data Source=C:\\Users\\shirt\\simple_pw_manager\\Easy\\Easy\\src\\test.db;Version=3;New=False;");
+        SQLiteConnection conn = new SQLiteConnection($"Data Source=C:\\Users\\shirt\\EasySQLite\\Easy\\src\\test.db;");
         
         conn.Open();
 
@@ -33,6 +33,28 @@ public class Program
         }
 
         Console.ReadKey();
+
+        var cmd1 = conn.CreateCommand();
+
+        cmd1.CommandText = "SELECT \r\n    m.name\r\n    , p.*\r\nFROM\r\n    sqlite_master m\r\n    JOIN pragma_foreign_key_list(m.name) p ON m.name != p.\"table\"\r\nWHERE m.type = 'table'\r\nORDER BY m.name\r\n;";
+
+        var reader1 = cmd1.ExecuteReader();
+
+        while (reader1.Read())
+        {
+            int numFields = reader1.FieldCount;
+
+            for (int i = 0; i < numFields; i++)
+            {
+                Console.WriteLine($"Value: {reader1.GetValue(i)}");
+            }
+       
+            //Console.WriteLine(numFields);
+        }
+        
+        Console.ReadKey();
+
+      
     }
 
 }

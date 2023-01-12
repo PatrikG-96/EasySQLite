@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZKnL+V+cGl4BCwT9yubnynwHoG8d77hiKxjIrQoVLlisdpaEeGA2KlK0VNKkwrytJNunOhq895yMNXuk710U6A==",
+  "dgSpecHash": "qXhiKpuc34UT7UWk8MkyylBcthS2b9ksx9ItF831boq/M3dVpyaxu4p4O6ATneJWLt6TDNZ13BRsUKlxBYvm1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shirt\\simple_pw_manager\\Easy\\Easy\\Easy.csproj",
+  "projectFilePath": "C:\\Users\\shirt\\EasySQLite\\Easy\\Easy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shirt\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.117\\stub.system.data.sqlite.core.netstandard.1.0.117.nupkg.sha512",
     "C:\\Users\\shirt\\.nuget\\packages\\system.data.sqlite.core\\1.0.117\\system.data.sqlite.core.1.0.117.nupkg.sha512"
