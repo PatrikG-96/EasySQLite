@@ -86,11 +86,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shirt\\EasySQLite\\Easy\\Easy.csproj",
+      "projectUniqueName": "C:\\Users\\shirt\\Easy\\Easy\\Easy.csproj",
       "projectName": "Easy",
-      "projectPath": "C:\\Users\\shirt\\EasySQLite\\Easy\\Easy.csproj",
+      "projectPath": "C:\\Users\\shirt\\Easy\\Easy\\Easy.csproj",
       "packagesPath": "C:\\Users\\shirt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shirt\\EasySQLite\\Easy\\obj\\",
+      "outputPath": "C:\\Users\\shirt\\Easy\\Easy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shirt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,7 +140,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
