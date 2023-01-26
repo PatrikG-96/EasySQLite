@@ -8,4 +8,9 @@ public class Column
 
     public bool IsPrimaryKey { get; set; }
 
+    public override string? ToString()
+    {
+        return $"{Name}:{Type}{(IsPrimaryKey ? $":PK" : "")}";
+    }
+
 }

@@ -2,5 +2,5 @@
 
 public enum Types
 {
-    INTEGER, TEXT, BLOB, NUMERIC, REAL
+    INTEGER, TEXT, BLOB, NUMERIC, REAL, ANY
 }

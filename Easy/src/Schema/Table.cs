@@ -5,13 +5,13 @@ public class Table
     public string Name { get; set; }
 
     private List<Column> Columns;
-    private List<Column> PrivateKey;
+    private List<Column> PrimaryKey;
 
     public Table(string name)
     {
         Name = name;
         Columns = new List<Column>();
-        PrivateKey = new List<Column>();
+        PrimaryKey = new List<Column>();
     }
 
     public List<Column> GetAllColumns()
@@ -25,7 +25,7 @@ public class Table
 
         if (column.IsPrimaryKey)
         {
-            PrivateKey.Add(column);
+            PrimaryKey.Add(column);
         }
     }
 
@@ -35,9 +35,19 @@ public class Table
         {
             if (column.Name == name) return column;
         }
-
+        Console.WriteLine($"Column {name} not found");
         // error
         return null;
+    }
+
+    public override string? ToString()
+    {
+        string output = new string('-', Name.Length + 2) + $"\n|{Name}|\n" ;
+
+        string columns = "|" + string.Join("|", Columns) + "|";
+
+        return output + columns;
+        
     }
 
 }

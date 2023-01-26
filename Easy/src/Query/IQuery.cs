@@ -12,7 +12,7 @@ namespace Easy.src.Query
 
         public string QueryString { get; set;}
 
-        public IResult Execute(SQLiteConnection connection);
+    
 
     }
 }

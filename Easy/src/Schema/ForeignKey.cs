@@ -10,4 +10,8 @@ public class ForeignKey
 
     public string ToColumn { get; set;}
 
+    public override string ToString()
+    {
+        return $"{FromTable}:{FromColumn} - {ToTable}:{ToColumn}";
+    }
 }
