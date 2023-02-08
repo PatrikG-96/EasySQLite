@@ -52,14 +52,14 @@ public class Session
         return _schema.GetTable(name);
     }
 
-    public List<ResultRow> ExecuteQuery(IQuery query)
+    public List<object> ExecuteQuery(IQuery query)
     {
         var command = _connection.CreateCommand();
         command.CommandText = query.QueryString+";";
         Console.WriteLine(query.QueryString);
         var reader = command.ExecuteReader();
 
-        var result = new List<ResultRow>();
+        var result = new List<object>();
 
         // reduce nesting
 
@@ -69,7 +69,7 @@ public class Session
 
             for (int i = 0; i < numFields; i++)
             {
-                var row = new ResultRow()
+                /**var row = new ResultRow()
                 {
                     Name = reader.GetName(i),
                     Value = new TypedValue()
@@ -78,9 +78,9 @@ public class Session
                         Type = Types.ANY
                     }
                     
-                };
+                };**/
                 
-                result.Add(row);
+                result.Add(reader.GetValue(i));
             }
             
         }

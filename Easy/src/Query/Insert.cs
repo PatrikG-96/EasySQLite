@@ -6,14 +6,17 @@ public class Insert : IQuery
 {
     public string QueryString { get; set; }
 
-    public Insert(Table table, List<Column> columns)
+    public Insert(Table table, List<Column> columns) : this(table.Name, columns.Select(r => r.Name).ToList())
+    { }
+
+    public Insert(string tableName, List<string> targetColumns)
     {
-        QueryString = $"INSERT INTO {table.Name} ({string.Join(",", columns.Select(r => r.Name))}) ";
+        QueryString = $"INSERT INTO {tableName} ({string.Join(",", targetColumns)}) ";
     }
 
-    public Insert Values(List<TypedValue> values)
+    public Insert Values(List<string> values)
     {
-        QueryString += $"VALUES ({string.Join(",", values)})";
+        QueryString += $"{string.Join(",", values)}";
         return this;
     }
 

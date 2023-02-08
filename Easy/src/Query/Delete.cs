@@ -6,15 +6,19 @@ public class Delete : IQuery
 {
     public string QueryString { get; set; }
 
-    public Delete(Table table)
+    public Delete(Table table) : this(table.Name) {}
+    
+    public Delete(string tableName)
     {
-        QueryString = $"DELETE FROM {table.Name} ";
+        QueryString = $"DELETE FROM {tableName} ";
     }
 
-    public Delete Where(Condition condition)
+    public Delete Where(Condition condition) => Where(condition.ToString());
+
+
+    public Delete Where(string conditionString)
     {
-        QueryString += $" WHERE {condition}";
+        QueryString += $" WHERE {conditionString}";
         return this;
     }
-
 }

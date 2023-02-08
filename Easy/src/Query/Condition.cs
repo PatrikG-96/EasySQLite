@@ -1,4 +1,5 @@
 ﻿using Easy.src.Schema;
+using Microsoft.VisualBasic.CompilerServices;
 
 namespace Easy.src.Query;
 
@@ -16,6 +17,11 @@ public class Condition
     public Condition(string condition)
     {
         _condition = condition;
+    }
+
+    public Condition(string firstColumn, string secondColumn, string operatorString)
+    {
+        _condition = firstColumn + operatorString + secondColumn;
     }
 
     public Condition(Column firstColumn, Column secondColumn, string operatorString)

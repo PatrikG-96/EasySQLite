@@ -14,6 +14,7 @@ public class Select : IQuery
 
     public string QueryString { get; set; }
 
+
     public Select(List<Column> columns)
     {
         QueryString = $"SELECT {string.Join(",", columns.Select(r => r.Name))} ";
